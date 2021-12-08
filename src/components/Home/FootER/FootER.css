@@ -1,0 +1,45 @@
+.footer-list {
+  background-color: #000;
+}
+.ErosAds {
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+}
+.footer-item {
+  color: #fff;
+  font-size: 14px;
+}
+.Contact {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.Contact:hover {
+  color: rgb(243, 185, 23);
+  cursor: pointer;
+}
+
+.footer-About {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+.footer-About:hover {
+  color: rgb(243, 185, 23);
+  cursor: pointer;
+}
+.Customization {
+  color: #fff;
+  line-height: 20px;
+}
+.Trademarks {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.TrademarksIP {
+  color: rgb(243, 185, 23);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}

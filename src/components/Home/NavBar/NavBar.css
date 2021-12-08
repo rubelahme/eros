@@ -1,0 +1,34 @@
+.NavBar1 {
+  background-color: #000;
+}
+.eros {
+  color: rgb(243, 185, 23);
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 25px;
+}
+.ads {
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 700;
+  font-size: 25px;
+}
+.item1 {
+  padding-right: 40px !important;
+  color: #8f8f8f !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+.item2 {
+  padding-right: 40px !important;
+  color: #8f8f8f !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+.item3 {
+  color: #8f8f8f !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+.navbar-light .navbar-toggler {
+  border: 1px solid #fff;
+}
