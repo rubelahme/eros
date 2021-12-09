@@ -31,15 +31,35 @@
 .Customization {
   color: #fff;
   line-height: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .Trademarks {
   color: #fff;
   padding: 0;
   margin: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .TrademarksIP {
   color: rgb(243, 185, 23);
   cursor: pointer;
-  padding: 0;
-  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .Customization {
+    color: #fff;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .Trademarks {
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+  .Contact {
+    margin-bottom: 7px;
+    font-size: 12px;
+    font-weight: 400 !important;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const {
@@ -9,8 +10,14 @@ const Login = () => {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  let navigate = useNavigate();
+  const onSubmit = (data) => {
+    console.log(data);
+    navigate("/verify");
+  };
   console.log(watch("example"));
+
   return (
     <>
       <div className="Login mb-5">
@@ -19,7 +26,11 @@ const Login = () => {
           <input
             className="form-control mb-4 p-3"
             placeholder="E-mail Address"
-            {...register("example", { required: true })}
+            {...register("example", {
+              required: true,
+              pattern:
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+            })}
           />
           {errors.example && (
             <p className="error">
