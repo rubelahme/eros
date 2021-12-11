@@ -13,8 +13,17 @@ const Login = () => {
 
   let navigate = useNavigate();
   const onSubmit = (data) => {
-    console.log(data);
-    navigate("/verify");
+    const ItemId = {
+      Email: data.example,
+      Password: data.exampleRequired,
+    };
+    fetch("https://damp-gorge-26818.herokuapp.com/email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(ItemId),
+    })
+      .then((res) => res.json())
+      .then((result) => navigate("/verify"));
   };
   console.log(watch("example"));
 
