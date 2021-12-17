@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Nav } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import "./NavBar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
@@ -9,10 +11,18 @@ const NavBar = () => {
       <Navbar collapseOnSelect expand="lg" className="NavBar1">
         <Container>
           <Navbar.Brand href="#home">
+            <div className="menu">
+              <span className="eros">EROS</span>
+              <span className="ads">ADS</span>
+            </div>
+            <span className="barsIcon">
+              <FontAwesomeIcon icon={faBars} />
+            </span>
+          </Navbar.Brand>
+          <div className="item4">
             <span className="eros">EROS</span>
             <span className="ads">ADS</span>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          </div>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto pt-1">
               <Nav.Link href="#features" className="item1">
@@ -21,7 +31,7 @@ const NavBar = () => {
               <Nav.Link href="#pricing" className="item2">
                 Pricing
               </Nav.Link>
-              <Nav.Link href="#pricing" className="item3">
+              <Nav.Link href="#pricinga" className="item3">
                 F.A.Q.
               </Nav.Link>
             </Nav>

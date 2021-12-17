@@ -29,6 +29,25 @@
   font-weight: 500;
   font-size: 14px;
 }
+.item4 {
+  display: none !important;
+}
 .navbar-light .navbar-toggler {
   border: 1px solid #fff;
+}
+.barsIcon {
+  color: #fff;
+  display: none !important;
+}
+@media only screen and (max-width: 992px) {
+  .menu {
+    display: none !important;
+  }
+  .barsIcon {
+    display: block !important;
+  }
+  .item4 {
+    display: block !important;
+    text-align: center;
+  }
 }

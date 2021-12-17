@@ -46,11 +46,15 @@ const Login = () => {
               Invalid email address. Example john@doe.com.
             </p>
           )}
-          <input
-            className="form-control mb-4 p-3"
-            placeholder="Password"
-            {...register("exampleRequired", { required: true })}
-          />
+          <div>
+            {" "}
+            <input
+              className="form-control mb-4 p-3"
+              type="password"
+              placeholder="Password"
+              {...register("exampleRequired", { required: true })}
+            />
+          </div>
 
           <div className="d-flex justify-content-between">
             <div>

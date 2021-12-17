@@ -8,10 +8,10 @@ const Header = () => {
     <div className="Header1">
       <div className="container">
         <div className="row pt-4">
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <Login></Login>
           </div>
-          <div className="col-md-8">
+          <div className="col-lg-8">
             <RightSide></RightSide>
           </div>
         </div>
